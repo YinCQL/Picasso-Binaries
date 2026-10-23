@@ -1,0 +1,14 @@
+[Defines]
+  INF_VERSION                    = 0x0001001B
+  BASE_NAME                      = MinidumpDxe
+  FILE_GUID                      = 2A0ECDCE-01AE-446E-9FFD-C4217DE0340F
+  MODULE_TYPE                    = DXE_DRIVER
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = EfiEntry
+
+[Binaries.AARCH64]
+  DXE_DEPEX|mdTADxe.depex|*
+  PE32|mdTADxe.efi|*
+
+[Depex]
+  TRUE
